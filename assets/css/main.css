@@ -2597,7 +2597,7 @@ input, select, textarea {
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								120%;
-		color: rgba(255, 255, 255, 1);
+		color: rgba(255, 255, 255, 0.7);
 		height: 100%;
 		left: 0;
 		padding: 8em 4em;
@@ -2650,11 +2650,11 @@ input, select, textarea {
 	}
 
 		#footer .icons a {
-			color: rgba(255, 255, 255, 1);
+			color: rgba(255, 255, 255, 0.7);
 		}
 
 	#footer .copyright {
-		color: rgba(255, 255, 255, 1);
+		color: rgba(255, 255, 255, 0.7);
 		font-size: 0.8em;
 		list-style: none;
 		margin: 1em 0 0 0;
