@@ -2593,10 +2593,10 @@ input, select, textarea {
 		justify-content: space-between;
 		background-color: #1f1815;
 		background-attachment: scroll,								scroll;
-		background-image: url("images/overlay.png"), url("../../images/dj-college.jpg");
+		background-image: url("images/overlay.png"), url("../../images/liberty-market.jpg");
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
-		background-size: auto,								120%;
+		background-size: auto,								140%;
 		color: rgba(255, 255, 255, 0.7);
 		height: 100%;
 		left: 0;
