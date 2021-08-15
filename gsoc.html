@@ -7,7 +7,58 @@
 		  <link rel="stylesheet" href="assets/css/main.css" />
    </head>
    <body class="gsoc">
-      <h1>Google Summer of Code</h1>
+      <header id="top">
+         <div class="inner">
+            <h1>Google Summer of Code 2021</h1>
+         </div>
+      </header>
+      
+      <div id="body">
+         <section id="Abstract">
+            <h2>M-extension support for SERV</h2>
+            <p>This project aims to design and integrate the integer “Multiplication and Division Unit (MDU)” with SERV core as a co-processor. 
+               The MDU will support all the instructions that are provided in “‘The RISC-V Instruction Set Manual. Volume I: Unprivileged ISA’ chapter 7, M-Standard Extension for Integer Multiplication and Division, Version 2.0”. This MDU is to be designed in a way that it would use most of the DSP resources on the targeted FPGA board.              
+               It would be generic and parameterized so that it can easily be integrated with any of the RISC-V cores.
+            </p>
+         </section>
+
+         <section id="details">
+            <h3>GSoC Summary</h3>
+							<div class="table-wrapper">
+								<table>
+									<thead>
+										<tr>
+											<th>Weeks</th>
+											<th>Description of Work</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Week 1-3</td>
+											<td>Started learning about the SERV module by running different assembly procedures in the simulation. </td>
+										</tr>
+										<tr>
+											<td>Week 4-5</td>
+											<td>Enabled the communication between SERV and Multiplication & Division Unit (MDU).</td>
+										</tr>
+										<tr>
+											<td>Week 6-7</td>
+											<td>Completed the Project and started working on code cleaning and optimizations.</td>
+										</tr>
+										<tr>
+											<td>Week 8</td>
+											<td>Make sure the compliance tests are running okay on SERV (RV32I) and MUD (RV32IM) and started documentation.</td>
+										</tr>
+										<tr>
+											<td>Week 9</td>
+											<td>Wrapping up the stuff and preparation for submission .</td>
+										</tr>
+									</tbody>
+								</table>
+         </section>
+      </div>
+      
+      
       <h2>Page Under Construction</h2>
       <a href="index.html">Go back</a>
    </body>
