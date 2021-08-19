@@ -7,15 +7,15 @@
 }
 
 img {
-  width: 100%;
+  width: 100px;
   display:inline;
   background-color: #1abc9c;
 } 
   img.gsoc {
-    width: 100%; /*110*/
+    width: 110px;
   } 
   img.fossi {
-    width: 90px; /**/
+    width: 90px;
   } 
   img.plus {
     width: 90px;
