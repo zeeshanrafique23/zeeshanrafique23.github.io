@@ -1,69 +1,99 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>GSoC'21</title>
-      <meta charset="utf-8" />
-		  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		  <link rel="stylesheet" href="assets/css/gsoc.css" />
-   </head>
-   <body class="gsoc">
-      <header id="top">
-         <div class="inner">
-            <h1>Google Summer of Code 2021</h1>
-         </div>
-      </header>
+   
+  <title>GSoC'21</title>
+  <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../assets/css/gsoc.css" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<style>
+    body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+		.content{ margin-left:100px; margin-right:100px}
+		.sub-title{text-align: center}
+  </style>
+   
+  <body class="w3-white">
+		<div class="header">
+  	  <header >
+  	     <div>
+					  <img class="gsoc" src="../images/thumbs/gsoc.png"/>
+						<img class="plus" src="../images/thumbs/plus.png"/>
+						<img class="fossi" src="../images/thumbs/fossi.png"/>
+  	        <h1>Google Summer of Code at FOSSI Foundation</h1>
+  	     </div>
+  	  </header>
+		</div>
       
-      <div id="body">
-         <section id="Abstract">
-            <h2>M-extension support for SERV</h2>
-            <p>This project aims to design and integrate the integer “Multiplication and Division Unit (MDU)” with SERV core as a co-processor. 
-               The MDU will support all the instructions that are provided in “‘The RISC-V Instruction Set Manual. Volume I: Unprivileged ISA’ chapter 7, M-Standard Extension for Integer Multiplication and Division, Version 2.0”. This MDU is to be designed in a way that it would use most of the DSP resources on the targeted FPGA board.              
-               It would be generic and parameterized so that it can easily be integrated with any of the RISC-V cores.
-            </p>
-         </section>
-
-         <p>Link to the parent MDU repository: <a href="https://github.com/zeeshanrafique23/mdu.git" target="_blank">here</a></p>
-         <a href="https://github.com/olofk/serv/pull/60"><h2>All the work covered in one PR #60</h2></a>
-
-         <section id="details">
-            <h3>GSoC Summary</h3>
-							<div class="table-wrapper">
-								<table>
-									<thead>
-										<tr>
-											<th>Weeks</th>
-											<th>Description of Work</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Week 1-3</td>
-											<td>Started learning about the SERV module by running different assembly procedures in the simulation. </td>
-										</tr>
-										<tr>
-											<td>Week 4-5</td>
-											<td>Enabled the communication between SERV and Multiplication & Division Unit (MDU).</td>
-										</tr>
-										<tr>
-											<td>Week 6-7</td>
-											<td>Completed the Project and started working on code cleaning and optimizations.</td>
-										</tr>
-										<tr>
-											<td>Week 8</td>
-											<td>Make sure the compliance tests are running okay on SERV (RV32I) and MUD (RV32IM) and started documentation.</td>
-										</tr>
-										<tr>
-											<td>Week 9</td>
-											<td>Wrapping up the stuff and preparation for submission .</td>
-										</tr>
-									</tbody>
-								</table>
-         </section>
-      </div>
+    <div class="content">
+			<h2 class="sub-title">M-extension support for SERV</h2>
       
+			<section>
+				<h4><strong>Abstract</strong></h4>
+      	<p>This project aims to design and integrate the integer “Multiplication and Division Unit (MDU)” with SERV core as a co-processor. 
+      	   The MDU will support all the instructions that are provided in “‘The RISC-V Instruction Set Manual. Volume I: Unprivileged ISA’ chapter 7, M-Standard Extension for Integer Multiplication and Division, Version 2.0”. This MDU is to be designed in a way that it would use most of the DSP resources on the targeted FPGA board.              
+      	   It would be generic and parameterized so that it can easily be integrated with any of the RISC-V cores.
+      	</p>
+      </section>
+
+			<section>
+				<h4><strong>Introduction</strong></h4>
+				<p><a href="https://riscv.org">RISC-V</a> is a free and Open-Source Instruction Set Architecture which comes with different extension in hardware like A for "Atomic",
+					B for "Bit-Manipulation", C for Compressed and like wise M for "Multiplication & division" etc. all these extension can be integrated with the base ISA RV32I (RISC-V 32-bit Integer). <br>
+				  <a href="https://github.com/olofk/serv">SERV</a> is a world smallest 32-bit RISC-V based bit-serial CPU. It performs a normal alu operation 32 cycles.
+
+				</p>
+			</section>
+
+      <section>
+        <h4><strong>Weekly Summary</strong></h4>
+					<div class="table-wrapper">
+						<table class="alt">
+							<thead>
+								<tr>
+									<th>Week</th>
+									<th>Description of Work</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Week 1-3</td>
+									<td>Started learning about the SERV modules by running different assembly programs in the simulation. </td>
+								</tr>
+								<tr>
+									<td>Week 4-5</td>
+									<td>Enabled the communication between SERV and Multiplication & Division Unit (MDU).</td>
+								</tr>
+								<tr>
+									<td>Week 6-7</td>
+									<td>Completed the Project and started working on code cleaning and optimizations.</td>
+								</tr>
+								<tr>
+									<td>Week 8</td>
+									<td>Make sure the compliance tests are running okay on SERV (RV32I) and MDU (RV32IM) and started documentation.</td>
+								</tr>
+								<tr>
+									<td>Week 9</td>
+									<td>Wrapping up the stuff and preparation for submission .</td>
+								</tr>
+							</tbody>
+						</table>
+      </section>
+    
+      <p>Link to the parent MDU repository: <a href="https://github.com/zeeshanrafique23/mdu.git" target="_blank">here</a></p>
+      <a href="https://github.com/olofk/serv/pull/60"><strong>All the work covered in one PR #60</strong></a>
       <p><strong>Pending Task:</strong> Documentation</p>
       
       <h2>Page Under Construction</h2>
       <a href="index.html">Go back</a>
+
+			<!-- Scripts -->
+			<!-- <script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script> -->
+		</div>	
    </body>
 </html>
