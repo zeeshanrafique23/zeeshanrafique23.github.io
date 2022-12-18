@@ -1,0 +1,120 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+
+\name{Zeeshan Rafique} % Your name
+\address{Karachi, Pakistan \\ zeeshanrafique.me \\ (+92)~$\cdot$~344 2350520 \\ zeeshanrafique23@gmail.com} % Your phone number and email
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Education}
+
+{\bf Usman Institute of Technology (NED), Karachi} \hfill {\em July 2021} \\ 
+B.E. in Computer Engineering {\em CGPA: 3.4}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Experience}
+
+%----------------------Xcelerium-------------------------
+\begin{rSubsection}{Xcelerium}{Nov 2021 - Present (Part-time)}
+{Hardware Engineer}{Irvine, CA (Remote)}
+
+\item Responsible of doing co-simulations \& AFI generation to emulate RISC-V System-on-Chip (SoC) on AWS-FPGA.
+\item Vectorized Floating Point Unit (FPU) for high bandwidth data for RISC-V vector SoC.
+\item Redesigned existing non-multi-precision FPU to support multi-precision operations to increase resource sharing.
+\end{rSubsection}
+
+%-----------------------MERL-------------------------
+\begin{rSubsection}{Micro Electronics Research Lab (MERL)}{Oct 2019 - Present}
+{Hardware Researcher}{Karachi, PK}
+\item Worked on designing and verification of embedded RISC-V processors.
+\item Involved in the complete development cycle of SoC from designing to chip bring-up.
+\item Part of a team who has collectively done 6 tape-outs on SKY130nm open-source PDK with the addition of new features in each revision. Also, done one commercial SoC tape-out on TSMC65nm PDK.
+\item Managed Git organization and repositories. Also introduced automation in workflows.
+\end{rSubsection}
+
+%------------------Google Summer of Code------------------
+\begin{rSubsection}{Google Summer of Code}{Jun 2021 - Aug 2021}
+{Contributor}{Remote}
+\item Worked on a RISC-V CPU called SERV to add support for Multiplication and Division operations to optimize the execution of the programs having Mul/Div instructions. 
+\item The project was completed in 3 months along with documentation.
+    
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Projects}
+
+%------------------------------------------------
+\begin{rSubsection}{Azadi-SoC}{https://github.com/merledu/azadi-soc}
+{SystemVerilog, Tcl, Python, Makefile, RV GCC}{MERL}
+Azadi-SoC is an embedded low-power 32-bit SoC that integrates a RISC-V processor with peripherals using Tilelink(UL) bus. I was involved in the RTL front-end of this SoC, system-level verification, emulation on FPGA, and in Synthesis flow to hand over a clean netlist to the back-end team. We taped out this SoC on TSMC-65nm.
+
+\end{rSubsection}
+
+%------------------------------------------------
+\begin{rSubsection}{Multi-precision FPU}{}
+{SystemVerilog, RISC-V, Cocotb}{Xcelerium}
+Rewrote the existing FPU modules to support multi-precision and to increase resource sharing. Also, designed a wrapper for vectorized floating point unit to handle a high bandwidth input data stream. The unit testing was performed using Cocotb (Python lib.) based test benches.
+
+\end{rSubsection}
+
+%------------------------------------------------
+\begin{rSubsection}{Buraq-mini-RV}{https://github.com/merledu/Buraq-mini}
+{SystemVerilog, RISC-V, C++}{MERL}
+A 32-bit 5-stage pipelined core designed in SystemVerilog. It implements the RISC-V base ISA and multiply/divide instructions. Basic assembly tests were executed on the core for verification. This project was intended for learning the execution of instructions in a pipelined environment. 
+
+\end{rSubsection}
+    
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Strengths}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{5ex}} l }
+Hardware Descriptive Languages & SystemVerilog, Verilog, CHISEL\\
+Interconnect \& Peripheral Protocols & AXI4, APB, TileLink, SPI, UART, PWM \\
+Computer Languages & Python, C/C++, Tcl, Shell scripting,  RISC-V Assembly \\
+Concepts & RISC-V ISA, MMIOs, STA, Synthesis \\
+Tools & Cadence(Xcelium, Genus), Verilator, Xilinx- \\ & Vivado, Git, Linux, Vim, RV GCC Compiler
+\end{tabular}
+
+\end{rSection}
+
+\end{document}
